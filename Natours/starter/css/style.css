@@ -72,6 +72,31 @@ body {
   padding: 3rem;
   box-sizing: border-box; }
 
+.heading-secondary {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
+  background-image: linear-gradient(to right, #55c57a, #28b485);
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: 2px;
+  transition: all 0.2s ease; }
+  .heading-secondary:hover {
+    transform: skewY(2deg) skewX(15deg) scale(1.1);
+    text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
+
+.u-center-text {
+  text-align: center; }
+
+.u-margin-bottom-80 {
+  margin-bottom: 8rem; }
+
+.section-about {
+  background-color: #f7f7f7;
+  padding: 25rem 0;
+  margin-top: -20vh; }
+
 .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
@@ -126,7 +151,7 @@ body {
   background-image: linear-gradient(to top, rgba(85, 197, 122, 0.801), rgba(40, 180, 133, 0.801)), url(../img/hero.jpg);
   background-size: cover;
   background-position: top;
-  clip-path: polygon(0 0, 100% 0, 100% 70vh, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   /*every item positioned abosulte should have
     a parent positioned relative */
   position: relative; }
@@ -145,7 +170,6 @@ body {
 
 .row {
   max-width: 114rem;
-  background-color: #eee;
   margin: 0 auto; }
   .row:not(:last-child) {
     margin-bottom: 8rem; }
@@ -154,9 +178,6 @@ body {
     display: table;
     clear: both; }
   .row [class^="col-"] {
-    background-color: chocolate;
-    padding: 1rem;
-    color: #fff;
     float: left; }
     .row [class^="col-"]:not(:last-child) {
       margin-right: 6rem; }
