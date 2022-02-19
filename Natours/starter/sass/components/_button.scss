@@ -1,4 +1,5 @@
 .btn {
+  &,
   &:link,
   &:visited {
     text-transform: uppercase;
@@ -9,6 +10,10 @@
     transition: all 0.2s;
     position: relative;
     font-size: $default-font-size;
+
+    // changes for the button element
+    border: none;
+    cursor: pointer;
   }
   &:hover {
     transform: translateY(-0.3rem);
@@ -18,7 +23,9 @@
       opacity: 0;
     }
   }
-  &:active {
+  &:active,
+  &:focus {
+    outline: none;
     transform: translateY(-0.1rem);
     box-shadow: 0 5rem 1rem rgba($color-black, 0.2); /* x,y,bluur, color*/
   }
@@ -52,8 +59,8 @@
 
   &--animated {
     animation-name: move-in-bottom;
-    animation-duration: 0.4s;
-    animation-delay: 2s;
+    animation-duration: 0.3s;
+    animation-delay: 1s;
     animation-timing-function: ease-in;
     animation-fill-mode: backwards; /*create the button at opacity 0 and apply all styles */
   }
