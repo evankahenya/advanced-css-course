@@ -1,5 +1,6 @@
 .header {
   height: 95vh;
+
   background-image: linear-gradient(
       to top,
       rgba($color-primary-light, 0.801),
@@ -12,6 +13,10 @@
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   /*every item positioned abosulte should have
     a parent positioned relative */
+  @include respond(phone) {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+  }
   position: relative;
   &__logo-box {
     position: absolute;

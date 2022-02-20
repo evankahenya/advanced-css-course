@@ -10,6 +10,10 @@
     position: fixed;
     top: 6rem;
     right: 6rem;
+    @include respond(tab-port) {
+      top: 2rem;
+      right: 2rem;
+    }
     z-index: 2000;
     box-shadow: 0 1rem 3rem rgba($color-black, 0.1);
     text-align: center;
@@ -22,6 +26,10 @@
     position: fixed;
     top: 6.5rem;
     right: 6.5rem;
+    @include respond(tab-port) {
+      top: 2rem;
+      right: 2rem;
+    }
     background-image: radial-gradient(
       $color-primary-light,
       $color-primary-dark
