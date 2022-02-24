@@ -10,6 +10,10 @@
   background-color: #fff;
   border-bottom: var(--color-grey-light-2);
   box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.4rem;
 }
 .content {
   display: flex;
